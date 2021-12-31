@@ -1,0 +1,34 @@
+.main-footer {
+    height: 70px;
+    background-color: rgba(72, 57, 75, 1);
+    font-weight: bold;
+    }
+ 
+   .main-footer .container {
+   display: flex;
+   justify-content: space-between;
+   }
+
+   .footer-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+   .footer-nav a{
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+  }
+
+   .footer-nav a:hover {
+    color: pink;
+  }
+  
+    .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+  }
