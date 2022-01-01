@@ -1,18 +1,25 @@
+
 <body class="container full-height-grow">
-<div>
-  <app-header></app-header>
-</div>
-<section class="home-main-section">
-  <div class="img-wrapper">
-      <div class="fork-img"></div>
-  </div>
-  <div class="action">
-      <h1 class="title">What's for Dinner?</h1>
-      <span class="subtitle">Click below to access over 5,000 recipes!</span>
-      <a href="search.html" class="btn">Search now</a>
-  </div>
-</section>
+  <header class="main-header"> 
+      <a href="/home" class="logo">
+          <img src="assets/images/Logo.png" width="50" height="50">
+          <div class="logo-name">FoodList</div>
+      </a>
+      <nav class="main-nav">
+          <ul>
+              <li><a routerLink="/search">Search</a></li>
+              <li><a href="/lists">Your Lists</a></li>
+          </ul>
+      </nav>
+  </header>
+
 <div>
   <app-footer></app-footer>
 </div>
 </body>
+<!-- router views go here -->
+<router-outlet></router-outlet>
+<nav>
+  <a routerLink="/search" routerLinkActive="active">Search</a>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+</nav>

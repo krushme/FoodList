@@ -6,17 +6,18 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchComponent,
     FooterComponent,
-    HomeComponent
+    routingComponents
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     AppRoutingModule
   ],
